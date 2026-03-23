@@ -1,0 +1,12 @@
+The Intel 8085AH is a complete 8-bit parallel Centra! Processing Unit (CPU) implemented in N-channel, 
+depletion load, silicon gate technology (HMOS). 
+Its instruction set is 100% software compatible with the 
+8080A microprocessor, and it is designed to improve the present 8080A's performance by higher system speed.
+Its high level of system integration allows a minimum system of three IC’s [8085AH (CPU), 8156H 
+(RAM/IO) and 8755A (EPROM/IO)] while maintaining total system expandability. 
+The 8085AH-2 and B8085AH-1 are faster versions of the 8085AH. 
+The 8085AH incorporates all of the features that the 8224 (clock generator) and 8228 (system controller) 
+provided for the 8080A, thereby offering a higher level of system integration. 
+The 8085AH uses a multiplexed data bus. 
+The address is split between the 8-bit address bus and the 8-bit data bus. 
+The on-chip address latches of 8155H/8156H/8755A memory products allow a direct interface with the 8085AH.
