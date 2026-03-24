@@ -1,0 +1,34 @@
+The 8085AH has 5 interrupt inputs:
+INTR, RST 5.5, RST 6.5, RST 7.5, and TRAP.
+INTR is identical in function to the 8080A INT.
+Each of the three RE-START inputs, 5.5, 6.5, and 7.5, has a programmable mask. 
+TRAP is also a RESTART interrupt but it is nonmaskable. 
+The three maskabie interrupt cause the internal execution of RESTART (saving the program counter in the stack and branching to the RESTART address) if the interrupts are enabled and if the interrupt mask is not set. 
+The nonmaskable TRAP causes the internal execution of a RESTART vector independent of the state of the interrupt enable or masks. (See Ta-ble 2.) 
+There are two different types of inputs in the restart interrupts.
+RST 5.5 and RST 6.5 are high /evel-sensitive like INTR (and INT on the 8080) and are recognized with the same timing as INTR. RST 7.5 is rising edge-sensitive. 
+The For RST 7.5, only a pulse is required to set an internal flip-flop which generates the internal interrupt request (a normally high level signal with a low going pulse is recommended for highest system noise immunity).
+The RST 7.5 request flip-flop remains set until the request is serviced. Then it is reset auto-matically. 
+This flip-flop may also be reset by using the SIM instruction or by issuing a RESET IN to the 8085AH.
+The RST 7.5 internal flip-flop will be set by a pulse on the RST 7.5 pin even when the RST 7.5 interrupt is masked out. 
+be The status of the three RST interrupt masks can only affected by the SIM instruction and RESET IN.
+(See SIM, Chapter 5 of the 8080/8085 User’s Manual.) 
+The interrupts are arranged in a fixed priority that determines which interrupt is to be recognized if more than one is pending as follows: 
+TRAP—highest priority, RST 7.5, RST 6.5, RST 5.5, INTR—lowest priority. This priority scheme does not take into account the priority of a routine that was started by a higher priority interrupt.
+RST 5.5 can interrupt an RST 7.5 routine if the interrupts are re-enabled before the end of the RST 7.5 routine. 
+The TRAP interrupt is useful for catastrophic events such as power failure or bus error. 
+The TRAP input is recognized just as any other interrupt but has the highest priority. 
+It is not affected by any flag or mask. 
+The TRAP input is both edge and level sensitive. 
+The TRAP input must go high and remain high until it is acknowledged. 
+It will not be recognized again until it goes low, then high again.
+This avoids any false triggering due to noise or logic glitches.
+Figure 4 illustrates the TRAP interrupt request circuitry within the 8085AH. 
+Note that the servicing of any interrupt (TRAP, RST 7.5, RST 6.5, RST 5.5, INTR) disables all future interrupts (except TRAPs) until an El instruction is executed. 
+The TRAP interrupt is special in that it disables interrupts, but preserves the previous interrupt enable status. 
+Performing the first RIM instruction following a TRAP interrupt allows you to determine whether interrupts were enabled or disabled prior to the TRAP. 
+All subsequent RIM instructions provide current interrupt enable status.
+Performing a RIM in- struction following INTR, or RST 5.5-7.5 will provide current Interrupt Enable status, revealing that interrupts are disabled. 
+See the description of the RIM instruction in the 8080/8085 Family User's Manual. 
+The serial I/O system is also controlled by the RIM and SIM instruction. 
+SID is read by RIM, and SIM sets the SOD data.
