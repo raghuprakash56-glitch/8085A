@@ -1,0 +1,17 @@
+The 8085AH is a complete 8-bit parallel central processor.
+It is designed with N-channel, depletion load, silicon gate technology (HMOS), and requires a single + 5V supply. 
+Its basic clock speed is 3 MHz (8085AH), 5 MHz (8085AH-2), or 6 MHz (8085-AH-1), thus improving on the present 8080A’s performance with higher system speed. 
+Also it is designed to fit into a minimum system of three IC’s: The CPU (8085AH), a RAM/IO (8156H), and an EPROM/IO chip (8755A). 
+The 8085AH has twelve addressable 8-bit registers. 
+Four of them can function only as two 16-bit register pairs.
+Six others can be used interchangeably as 8-bit registers or as 16-bit register pairs.
+The 8085AH uses a multiplexed Data Bus. 
+The ad- dress is split between the higher 8-bit Address Bus and the lower 8-bit Address/Data Bus.
+During the first T state (clock cycle) of a machine cycle the low order address is sent out on the Address/Data bus. 
+These lower 8 bits may be latched externally by the Address Latch Enable signal (ALE).
+During the rest of the machine cycle the data bus is used for memo-ry or I/O data. 
+The 8085AH provides RD, WR, So, $1, and 1IO/M signals for bus control.
+An Interrupt Acknowledge signal (INTA) is also provided. 
+HOLD and all Interrupts are synchronized with the processor’s internal clock.
+The 8085AH also provides Serial input Data (SID) and Serial Output Data (SOD) lines for simple serial interface. 
+In addition to these features, the 8085AH has three maskable, vector interrupt pins, one nonmaskable TRAP interrupt, and a bus vectored interrupt, INTR. 
