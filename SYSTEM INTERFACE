@@ -1,0 +1,21 @@
+The 8085AH family includes memory components, which are directly compatible to the 8085AH CPU. 
+For example, a system consisting of the three chips, 8085AH, 8156H and 8755A will have the following features:
+® 2K Bytes EPROM 
+* 256 Bytes RAM 
+© 1 Timer/Counter 
+© 4 8-bit 1/0 Ports 
+© 1 6bit I/O Port 
+© 4 Interrupt Levels 
+© Serial In/Serial Out Ports
+This minimum system, using the standard I/O technique is as shown in Figure 7. 
+in addition to the standard I/O, the memory mapped 1/0 offers an efficient {/O addressing technique. 
+With this technique, an area of memory address space is assigned for I/O address, thereby, using the memory address for I/O manipulation.
+Figure 8 shows the system configuration of Memory Mapped 1/0 using 8085AH. 
+The 8085AH CPU can also interface with the standard memory that does not have the multiplexed ad- dress/data bus. 
+It will require a simple 8-bit latch as shown in Figure 9. 
+
+
+
+
+
+ 
