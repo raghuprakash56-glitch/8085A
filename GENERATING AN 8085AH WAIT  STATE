@@ -1,0 +1,7 @@
+lf your system requirements are such that slow memories or peripheral devices are being used,
+the circuit  may be used to insert one WAIT state in each 8085AH machine cycle.
+The D flip-flops should be chosen so that 
+* CLK is rising edge-triggered .
+® CLEAR is low-level active.
+As in the 8080, the READY line is used to extend the read and write pulse lengths so that the BO85AH can be used with slow memory. 
+HOLD causes the CPU to relinquish the bus when it is through with it by floating the Address and Data Buses.
