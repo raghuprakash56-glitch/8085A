@@ -2,7 +2,7 @@
 
 ## 📁 About This Repository
 
-This repository is dedicated to learning, practicing, and strengthening knowledge of the **8085A microprocessor architecture** and **assembly language programming**. It contains a collection of notes and programs developed during my learning process, focusing on clarity, correctness, and logical understanding.
+This repository is dedicated to learning, practicing, and strengthening knowledge of the ***8085A microprocessor architecture*** and **assembly language programming**. It contains a collection of notes and programs developed during my learning process, focusing on clarity, correctness, and logical understanding.
 
 The repository serves as both a personal knowledge base and a reference for beginners who want to understand low-level programming and microprocessor fundamentals through practical examples.
 
