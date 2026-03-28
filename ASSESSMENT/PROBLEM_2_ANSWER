@@ -9,5 +9,4 @@ MOV C, A    ; C = b (optional step)
 MOV A, B    ; A = a
 SUB C       ; A = a - b
 STA 1002H   ; store result
-
 HLT
