@@ -4,7 +4,6 @@ MVI A, 20
 STA 1001H
 LDA 1000H   ; A = a
 MOV B, A    ; B = a
-
 LDA 1001H   ; A = b
 MOV C, A    ; C = b (optional step)
 
