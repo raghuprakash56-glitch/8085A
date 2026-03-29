@@ -4,7 +4,6 @@ MVI A, 20
 STA 1001H
 LDA 1000H
 MOV B, A
-
 LDA 1001H
 ANA B          ; A = A AND B
 
