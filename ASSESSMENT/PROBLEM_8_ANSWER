@@ -14,7 +14,6 @@ MOV B, A
 LDA 1002H
 ANA B
 STA 1004H      ; Low byte result
-
 ; AND high bytes
 LDA 1001H
 MOV B, A
