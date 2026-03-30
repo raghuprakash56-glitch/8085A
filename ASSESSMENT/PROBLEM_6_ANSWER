@@ -20,6 +20,5 @@ MOV B, A
 LDA 1003H
 ADC B          ; Add with carry
 STA 1005H      ; Store high byte
-
 HLT
 SOLUTION 6
