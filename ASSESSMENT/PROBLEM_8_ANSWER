@@ -1,0 +1,28 @@
+; Store a = 000AH
+MVI A, 0AH
+STA 1000H      ; Low byte
+MVI A, 00H
+STA 1001H      ; High byte
+
+; Store b = 0014H
+MVI A, 14H
+STA 1002H      ; Low byte
+MVI A, 00H
+STA 1003H      ; High byte
+
+; AND low bytes
+LDA 1000H
+MOV B, A
+LDA 1002H
+ANA B
+STA 1004H      ; Low byte result
+
+; AND high bytes
+LDA 1001H
+MOV B, A
+LDA 1003H
+ANA B
+STA 1005H      ; High byte result
+
+HLT
+solution 8
