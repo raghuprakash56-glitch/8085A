@@ -14,7 +14,6 @@ MOV B, A
 LDA 1002H
 ADD B
 STA 1004H      ; Store low byte of result
-
 ; Add high bytes with carry
 LDA 1001H
 MOV B, A
