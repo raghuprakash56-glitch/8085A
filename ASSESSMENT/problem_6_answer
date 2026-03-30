@@ -1,0 +1,28 @@
+; Store a = 000AH
+MVI A, 0AH
+STA 1000H      ; Low byte
+MVI A, 00H
+STA 1001H      ; High byte
+
+; Store b = 0014H (20)
+MVI A, 14H
+STA 1002H      ; Low byte
+MVI A, 00H
+STA 1003H      ; High byte
+
+; Add low bytes
+LDA 1000H
+MOV B, A
+LDA 1002H
+ADD B
+STA 1004H      ; Store low byte of result
+
+; Add high bytes with carry
+LDA 1001H
+MOV B, A
+LDA 1003H
+ADC B          ; Add with carry
+STA 1005H      ; Store high byte
+
+HLT
+SOLUTION 6
