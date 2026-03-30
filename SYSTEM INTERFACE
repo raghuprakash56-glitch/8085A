@@ -13,9 +13,3 @@ With this technique, an area of memory address space is assigned for I/O address
 Figure 8 shows the system configuration of Memory Mapped 1/0 using 8085AH. 
 The 8085AH CPU can also interface with the standard memory that does not have the multiplexed ad- dress/data bus. 
 It will require a simple 8-bit latch as shown in Figure 9. 
-
-
-
-
-
- 
