@@ -8,7 +8,6 @@ MVI A, 14H
 STA 1002H      ; Low byte
 MVI A, 00H
 STA 1003H      ; High byte
-
 ; AND low bytes
 LDA 1000H
 MOV B, A
