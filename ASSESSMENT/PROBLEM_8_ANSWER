@@ -21,4 +21,3 @@ LDA 1003H
 ANA B
 STA 1005H      ; High byte result
 HLT
-solution 8
