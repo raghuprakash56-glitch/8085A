@@ -21,4 +21,3 @@ LDA 1003H
 ORA B         
 STA 1005H      
 HLT
-solution 9
