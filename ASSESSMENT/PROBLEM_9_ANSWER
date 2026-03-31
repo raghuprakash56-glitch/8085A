@@ -3,7 +3,6 @@ MVI A, 0AH
 STA 1000H     
 MVI A, 00H
 STA 1001H     
-
 ; Store b = 0014H
 MVI A, 14H
 STA 1002H      
