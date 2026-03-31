@@ -20,6 +20,5 @@ MOV B, A
 LDA 1003H
 XRA B         
 STA 1005H      
-
 HLT
 solution 10
