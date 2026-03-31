@@ -14,7 +14,6 @@ MOV B, A
 LDA 1002H
 ORA B
 STA 1004H     
-
 ; OR high bytes
 LDA 1001H
 MOV B, A
