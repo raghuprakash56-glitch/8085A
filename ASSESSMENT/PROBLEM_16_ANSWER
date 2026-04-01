@@ -6,7 +6,6 @@ MVI D,00H
 DAD D          ; HL = HL + DE
 DCR C
 JNZ LOOP
-
 SHLD 1000H
 HLT
 solution 16
