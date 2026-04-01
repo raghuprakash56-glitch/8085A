@@ -1,6 +1,5 @@
 MVI B,0AH      ; B = 10
 MVI C,14H      ; C = 20
-
 LXI H,0000H    ; HL = result
 
 LOOP: MOV E,B  ; move 10 into DE pair
