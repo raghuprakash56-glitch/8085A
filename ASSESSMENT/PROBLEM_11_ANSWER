@@ -10,7 +10,6 @@ MVI A,00       ; A = result = 0
 LOOP: ADD B    ; A = A + 10
 DCR C          ; decrease counter
 JNZ LOOP
-
 STA 1002H
 HLT
 solution 11
