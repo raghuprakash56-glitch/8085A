@@ -8,4 +8,3 @@ DCR C
 JNZ LOOP
 SHLD 1000H
 HLT
-solution 16
