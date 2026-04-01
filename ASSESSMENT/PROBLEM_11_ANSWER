@@ -1,0 +1,21 @@
+MVI A,10
+STA 1000H
+
+MVI A,20
+STA 1001H
+
+LDA 1000H
+MOV B,A        ; B = 10
+
+LDA 1001H
+MOV C,A        ; C = 20 (counter)
+
+MVI A,00       ; A = result = 0
+
+LOOP: ADD B    ; A = A + 10
+DCR C          ; decrease counter
+JNZ LOOP
+
+STA 1002H
+HLT
+solution 11
