@@ -1,0 +1,15 @@
+MVI B,0AH      ; B = 10
+MVI C,14H      ; C = 20
+
+LXI H,0000H    ; HL = result
+
+LOOP: MOV E,B  ; move 10 into DE pair
+MVI D,00H
+DAD D          ; HL = HL + DE
+
+DCR C
+JNZ LOOP
+
+SHLD 1000H
+HLT
+solution 16
