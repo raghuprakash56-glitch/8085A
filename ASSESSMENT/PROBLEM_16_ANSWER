@@ -4,7 +4,6 @@ LXI H,0000H    ; HL = result
 LOOP: MOV E,B  ; move 10 into DE pair
 MVI D,00H
 DAD D          ; HL = HL + DE
-
 DCR C
 JNZ LOOP
 
