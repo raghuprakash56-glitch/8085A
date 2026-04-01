@@ -7,7 +7,6 @@ MOV B,A        ; B = 10
 LDA 1001H
 MOV C,A        ; C = 20 (counter)
 MVI A,00       ; A = result = 0
-
 LOOP: ADD B    ; A = A + 10
 DCR C          ; decrease counter
 JNZ LOOP
