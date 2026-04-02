@@ -14,7 +14,6 @@ LOOP: MOV A, B
       MOV B, A
       INR D         ; quotient++
       JMP LOOP
-
 END:  MOV A, D
       STA 1002H     ; store result (c)
 
