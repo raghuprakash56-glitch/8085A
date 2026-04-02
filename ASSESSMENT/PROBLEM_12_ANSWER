@@ -7,11 +7,9 @@ MOV B, A        ; B = dividend
 LDA 1001H       ; A = b (20)
 MOV C, A        ; C = divisor
 MVI D, 00H      ; D = quotient (c = 0)
-
 LOOP: MOV A, B
       CMP C         ; Compare B and C
       JC END        ; If B < C, stop
-
       SUB C         ; B = B - C
       MOV B, A
 
