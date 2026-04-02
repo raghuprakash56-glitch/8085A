@@ -1,6 +1,5 @@
 MVI A, 0AH      ; A = 10
 STA 1000H       ; a → 1000H
-
 MVI A, 14H      ; A = 20
 STA 1001H       ; b → 1001H
 
