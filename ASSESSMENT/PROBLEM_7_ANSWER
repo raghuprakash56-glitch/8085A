@@ -7,5 +7,4 @@ MOV B, A        ; B = a
 LDA 1001H       ; Load b (20)
 SUB B           ; A = b - a  
 STA 1002H       ; Store result
-
 HLT
