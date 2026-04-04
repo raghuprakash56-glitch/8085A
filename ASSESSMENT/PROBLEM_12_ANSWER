@@ -2,7 +2,6 @@ MVI A, 0AH      ; A = 10
 STA 1000H       ; a
 MVI A, 14H      ; A = 20
 STA 1001H       ; b
-
 LDA 1000H       ; A = a (10)
 MOV B, A        ; B = dividend
 
