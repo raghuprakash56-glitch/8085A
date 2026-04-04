@@ -16,5 +16,4 @@ LOOP: MOV A, B
       JMP LOOP
       END:  MOV A, D
       STA 1002H     ; store result (c)
-
 HLT solution 12
