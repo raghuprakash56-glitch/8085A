@@ -4,7 +4,6 @@ MVI A, 14H      ; A = 20
 STA 1001H       ; b
 LDA 1000H       ; A = a (10)
 MOV B, A        ; B = dividend
-
 LDA 1001H       ; A = b (20)
 MOV C, A        ; C = divisor
 
