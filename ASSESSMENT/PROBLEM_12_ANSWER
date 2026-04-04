@@ -12,7 +12,6 @@ LOOP: MOV A, B
       JC END        ; If B < C, stop
       SUB C         ; B = B - C
       MOV B, A
-
       INR D         ; quotient++
       JMP LOOP
 
