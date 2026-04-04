@@ -1,19 +1,28 @@
 MVI A, 0AH      ; A = 10
 STA 1000H       ; a
+
 MVI A, 14H      ; A = 20
 STA 1001H       ; b
+
 LDA 1000H       ; A = a (10)
 MOV B, A        ; B = dividend
+
 LDA 1001H       ; A = b (20)
 MOV C, A        ; C = divisor
+
 MVI D, 00H      ; D = quotient (c = 0)
+
 LOOP: MOV A, B
       CMP C         ; Compare B and C
       JC END        ; If B < C, stop
+
       SUB C         ; B = B - C
       MOV B, A
+
       INR D         ; quotient++
       JMP LOOP
+
 END:  MOV A, D
       STA 1002H     ; store result (c)
-HLT
+
+HLT solution 12
