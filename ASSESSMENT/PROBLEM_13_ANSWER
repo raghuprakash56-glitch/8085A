@@ -14,5 +14,4 @@ LOOP: MOV A, B
       JMP LOOP
 END:  MOV A, B
       STA 1002H     ; Store remainder (c)
-
 HLT
