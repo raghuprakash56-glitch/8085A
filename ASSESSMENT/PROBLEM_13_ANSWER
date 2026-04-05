@@ -2,7 +2,6 @@ MVI A, 11H      ; A = 17
 STA 1000H       ; a
 MVI A, 05H      ; A = 5
 STA 1001H       ; b
-
 LDA 1000H       ; Load a
 MOV B, A        ; B = dividend
 
