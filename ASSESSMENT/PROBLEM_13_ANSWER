@@ -6,7 +6,6 @@ LDA 1000H       ; Load a
 MOV B, A        ; B = dividend
 LDA 1001H       ; Load b
 MOV C, A        ; C = divisor
-
 LOOP: MOV A, B
       CMP C         ; Compare B and C
       JC END        ; If B < C → stop
