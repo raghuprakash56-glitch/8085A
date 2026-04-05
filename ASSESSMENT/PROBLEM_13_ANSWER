@@ -22,4 +22,3 @@ END:  MOV A, B
       STA 1002H     ; Store remainder (c)
 
 HLT
-solution 13
