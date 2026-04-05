@@ -4,7 +4,6 @@ MVI A, 05H      ; A = 5
 STA 1001H       ; b
 LDA 1000H       ; Load a
 MOV B, A        ; B = dividend
-
 LDA 1001H       ; Load b
 MOV C, A        ; C = divisor
 
