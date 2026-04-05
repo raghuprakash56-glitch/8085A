@@ -1,1 +1,25 @@
+MVI A, 11H      ; A = 17
+STA 1000H       ; a
 
+MVI A, 05H      ; A = 5
+STA 1001H       ; b
+
+LDA 1000H       ; Load a
+MOV B, A        ; B = dividend
+
+LDA 1001H       ; Load b
+MOV C, A        ; C = divisor
+
+LOOP: MOV A, B
+      CMP C         ; Compare B and C
+      JC END        ; If B < C → stop
+
+      SUB C         ; B = B - C
+      MOV B, A
+      JMP LOOP
+
+END:  MOV A, B
+      STA 1002H     ; Store remainder (c)
+
+HLT
+solution 13
