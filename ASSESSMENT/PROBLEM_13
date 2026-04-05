@@ -1,1 +1,5 @@
-
+char a, b, c;
+a = 17;
+b = 5;
+c = a % b;
+prblm 13
