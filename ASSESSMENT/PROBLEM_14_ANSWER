@@ -4,4 +4,3 @@ CMA             ; Complement A (A = ~A)
 STA 1002H       ; Store result (c)
 
 HLT
-solution14
