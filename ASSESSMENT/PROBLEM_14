@@ -2,4 +2,3 @@ char a, b, c;
 a = 10;
 b = 20;
 c = ~a;
-prblm 14
