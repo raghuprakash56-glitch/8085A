@@ -2,5 +2,4 @@ MVI A, 0AH      ; A = 10
 CMA             ; Complement A (A = ~A)
 
 STA 1002H       ; Store result (c)
-
 HLT
