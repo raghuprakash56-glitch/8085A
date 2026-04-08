@@ -3,7 +3,6 @@ MOV B, A        ; B = a
 
 MVI A, 14H      ; A = 20
 ANA B           ; A = A & B  → result = 0
-
 CMA             ; A = ~A
 STA 1002H       ; store c
 HLT
