@@ -8,4 +8,4 @@ CMA             ; A = ~A
 
 STA 1002H       ; store c
 
-HLTsolve 
+HLT
