@@ -7,5 +7,4 @@ ANA B           ; A = A & B  → result = 0
 CMA             ; A = ~A
 
 STA 1002H       ; store c
-
 HLT
