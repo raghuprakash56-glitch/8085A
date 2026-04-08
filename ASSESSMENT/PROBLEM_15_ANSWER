@@ -1,6 +1,5 @@
 MVI A, 0AH      ; A = 10
 MOV B, A        ; B = a
-
 MVI A, 14H      ; A = 20
 ANA B           ; A = A & B  → result = 0
 CMA             ; A = ~A
