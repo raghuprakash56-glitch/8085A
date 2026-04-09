@@ -13,7 +13,6 @@ LDA 1002H
 MOV E, A          ; low byte
 LDA 1003H
 MOV D, A          ; high byte
-
 ; Initialize quotient = 0000
 MVI B, 00H
 MVI C, 00H        ; BC = quotient
