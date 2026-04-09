@@ -8,7 +8,6 @@ MVI L, 14H
 SHLD 1002H        ; store b (2 bytes)
 ; Load a into HL
 LHLD 1000H        ; HL = dividend
-
 ; Load b into DE
 LDA 1002H
 MOV E, A          ; low byte
