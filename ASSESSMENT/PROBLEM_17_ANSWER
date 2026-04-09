@@ -2,7 +2,6 @@
 MVI H, 00H
 MVI L, 0AH
 SHLD 1000H        ; store a (2 bytes)
-
 ; b = 0014H
 MVI H, 00H
 MVI L, 14H
