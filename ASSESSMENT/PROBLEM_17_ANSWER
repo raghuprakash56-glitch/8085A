@@ -6,7 +6,6 @@ SHLD 1000H        ; store a (2 bytes)
 MVI H, 00H
 MVI L, 14H
 SHLD 1002H        ; store b (2 bytes)
-
 ; Load a into HL
 LHLD 1000H        ; HL = dividend
 
