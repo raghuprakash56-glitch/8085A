@@ -27,14 +27,11 @@ LOOP:
     MOV A, L
     SUB E
     MOV L, A
-
     MOV A, H
     SBB D
     MOV H, A
-
     ; Increment quotient (BC)
     INX B
-
     JMP LOOP
 
 END:
