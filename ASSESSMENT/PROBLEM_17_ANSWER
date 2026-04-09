@@ -33,12 +33,10 @@ LOOP:
     ; Increment quotient (BC)
     INX B
     JMP LOOP
-
 END:
     ; Store quotient
     MOV H, B
     MOV L, C
     SHLD 1004H    ; store c (2 bytes)
-
 HLT
 ASW 17
