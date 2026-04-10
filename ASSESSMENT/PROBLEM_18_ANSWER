@@ -28,9 +28,6 @@ LOOP:
     SBB D
     MOV H, A
     JMP LOOP
-
 END:
     SHLD 1004H    ; store remainder (c)
-
 HLT
-SOLUTION 18
