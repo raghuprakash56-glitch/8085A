@@ -27,7 +27,6 @@ LOOP:
     MOV A, H
     SBB D
     MOV H, A
-
     JMP LOOP
 
 END:
