@@ -2,7 +2,6 @@
 MVI H, 00H
 MVI L, 11H
 SHLD 1000H
-
 ; b = 0005H (5)
 MVI H, 00H
 MVI L, 05H
