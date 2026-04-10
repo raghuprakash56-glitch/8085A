@@ -1,1 +1,43 @@
+; a = 0011H (17)
+MVI H, 00H
+MVI L, 11H
+SHLD 1000H
 
+; b = 0005H (5)
+MVI H, 00H
+MVI L, 05H
+SHLD 1002H
+
+; Load a into HL
+LHLD 1000H        ; HL = dividend
+
+; Load b into DE
+LDA 1002H
+MOV E, A
+LDA 1003H
+MOV D, A          ; DE = divisor
+
+LOOP:
+    ; Compare HL and DE
+    MOV A, L
+    SUB E
+    MOV A, H
+    SBB D
+    JC END        ; if HL < DE → stop
+
+    ; HL = HL - DE
+    MOV A, L
+    SUB E
+    MOV L, A
+
+    MOV A, H
+    SBB D
+    MOV H, A
+
+    JMP LOOP
+
+END:
+    SHLD 1004H    ; store remainder (c)
+
+HLT
+SOLUTION 18
