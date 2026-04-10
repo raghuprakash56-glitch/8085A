@@ -20,7 +20,6 @@ LOOP:
     MOV A, H
     SBB D
     JC END        ; if HL < DE → stop
-
     ; HL = HL - DE
     MOV A, L
     SUB E
