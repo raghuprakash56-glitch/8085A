@@ -24,7 +24,6 @@ LOOP:
     MOV A, L
     SUB E
     MOV L, A
-
     MOV A, H
     SBB D
     MOV H, A
