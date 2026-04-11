@@ -15,7 +15,6 @@ There are seven possible types of machine cycles.
 
 
 
-
 Which of these seven takes place is defined by the status of the three status lines (IO/M, S1, So) and the three control signals (RD, WR, and INTA). 
 The status lines can be used as advanced controls (for device selection, for example), since they become active at the T, state, at the outset of each machine cycle.
 Control tines RD and WR be- come active later, at the time when the transfer of data is to take place, so are used as command lines.
