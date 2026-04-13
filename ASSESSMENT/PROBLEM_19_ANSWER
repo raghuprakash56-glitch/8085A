@@ -1,5 +1,4 @@
-
-; Store a = 000AH
+ Store a = 000AH
 MVI A, 0AH
 STA 1000H      
 MVI A, 00H
