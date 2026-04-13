@@ -1,14 +1,14 @@
 
 ; Store a = 000AH
 MVI A, 0AH
-STA 1000H      ; low byte
+STA 1000H      
 MVI A, 00H
-STA 1001H      ; high byte
+STA 1001H      
 
 ; Complement low byte
 LDA 1000H
-CMA            ; A = ~A
-STA 1002H      ; store low byte of c
+CMA            
+STA 1002H      
 
 ; Complement high byte
 LDA 1001H
