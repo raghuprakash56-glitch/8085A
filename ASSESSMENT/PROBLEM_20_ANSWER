@@ -13,7 +13,6 @@ LDA 1002H
 MOV E, A
 LDA 1003H
 MOV D, A
-
 ; AND operation (low byte)
 MOV A, L
 ANA E
