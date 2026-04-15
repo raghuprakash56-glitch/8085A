@@ -28,7 +28,6 @@ MOV L, A
 MOV A, H
 CMA
 MOV H, A
-
 ; Store result
 SHLD 1004H
 
