@@ -6,7 +6,6 @@ SHLD 1000H
 MVI H, 00H
 MVI L, 14H
 SHLD 1002H
-
 ; Load a into HL
 LHLD 1000H
 
