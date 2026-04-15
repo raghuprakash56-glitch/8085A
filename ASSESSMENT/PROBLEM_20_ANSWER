@@ -31,4 +31,3 @@ MOV H, A
 ; Store result
 SHLD 1004H
 HLT
-ANSWER 20
