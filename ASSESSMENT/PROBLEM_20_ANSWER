@@ -1,1 +1,43 @@
+; a = 000AH
+MVI H, 00H
+MVI L, 0AH
+SHLD 1000H
 
+; b = 0014H
+MVI H, 00H
+MVI L, 14H
+SHLD 1002H
+
+; Load a into HL
+LHLD 1000H
+
+; Load b into DE
+LDA 1002H
+MOV E, A
+LDA 1003H
+MOV D, A
+
+; AND operation (low byte)
+MOV A, L
+ANA E
+MOV L, A
+
+; AND operation (high byte)
+MOV A, H
+ANA D
+MOV H, A
+
+; NOT operation (both bytes)
+MOV A, L
+CMA
+MOV L, A
+
+MOV A, H
+CMA
+MOV H, A
+
+; Store result
+SHLD 1004H
+
+HLT
+ANSWER 20
