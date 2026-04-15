@@ -21,7 +21,6 @@ MOV L, A
 MOV A, H
 ANA D
 MOV H, A
-
 ; NOT operation (both bytes)
 MOV A, L
 CMA
