@@ -8,7 +8,6 @@ MVI L, 14H
 SHLD 1002H
 ; Load a into HL
 LHLD 1000H
-
 ; Load b into DE
 LDA 1002H
 MOV E, A
