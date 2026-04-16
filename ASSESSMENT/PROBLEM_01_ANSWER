@@ -8,7 +8,6 @@ MOV B,A
 
 
 
-
 LDA 1001H
 ADD B
 STA 1002H  
