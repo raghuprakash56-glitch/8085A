@@ -2,6 +2,7 @@ Intel 8085A Microprocessor — Complete Pin-by-Pin Explanation
 Chip: Intel 8085A | Package: 40-pin DIP | Technology: NMOS | Supply: +5V | Data Bus: 8-bit | Address Bus: 16-bit
 The Intel 8085A is an 8-bit microprocessor introduced by Intel in 1977. It operates on a single +5V power supply and contains 6,500 transistors. The chip comes in a 40-pin Dual In-line Package (DIP). Understanding each pin is fundamental to designing 8085-based systems. The pins are numbered 1 to 40, starting from the top-left (notch side) and going counter-clockwise.
 
+
 PIN 1 — X1 (Crystal / External Clock Input 1)
 Pin 1 is labeled X1 and is one of two pins used to connect an external crystal oscillator to the 8085A. The crystal is connected between X1 (pin 1) and X2 (pin 2) to generate the internal clock signal required for the processor to operate. The 8085A has a built-in clock oscillator circuit; the crystal simply sets the operating frequency. Typical crystal frequencies used are 6 MHz or 6.144 MHz. The internal circuitry divides this frequency by 2, so a 6 MHz crystal produces a 3 MHz internal clock (CLK). Alternatively, an external clock source (RC network or TTL oscillator) can be connected to X1 alone, and X2 is left unconnected in that case. This pin must always be driven — the processor cannot run without a clock source.
 Use: Crystal oscillator terminal 1, external clock input.
