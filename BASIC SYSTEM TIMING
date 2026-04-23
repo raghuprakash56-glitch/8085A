@@ -14,7 +14,6 @@ ALE is used as a strobe to sample the lower 8-bits of address on the Data Bus.
 
 
 
-
 Figure 10 shows an instruction fetch, memory read and |/O write cycle (as would occur during processing of the OUT instruction). 
 Note that during the {/O write and read cycle that the |/O port address is copied on both the upper and lower half of the address. 
 There are seven possible types of machine cycles.
