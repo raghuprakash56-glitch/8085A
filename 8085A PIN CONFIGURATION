@@ -1,5 +1,4 @@
 Intel 8085A Microprocessor — Complete Pin-by-Pin Explanation
-
 Chip: Intel 8085A | Package: 40-pin DIP | Technology: NMOS | Supply: +5V | Data Bus: 8-bit | Address Bus: 16-bit
 The Intel 8085A is an 8-bit microprocessor introduced by Intel in 1977. It operates on a single +5V power supply and contains 6,500 transistors. The chip comes in a 40-pin Dual In-line Package (DIP). Understanding each pin is fundamental to designing 8085-based systems. The pins are numbered 1 to 40, starting from the top-left (notch side) and going counter-clockwise.
 
